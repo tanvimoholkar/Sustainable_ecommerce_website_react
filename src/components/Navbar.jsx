@@ -5,7 +5,7 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from '@material-ui/core';
 
 const Container = styled.div`
-    height: 60px;
+    height: 80px;
 `
 const Wrapper = styled.div`
     padding: 10px 20px;
