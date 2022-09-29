@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import { sliderItems } from '../data';
 
@@ -98,7 +98,7 @@ export const Slider = () => {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
-        <Slide bg={item.bg}>
+        <Slide bg={item.bg} key={item.id}>
         <InfoContainer>
           <Title>{item.title}</Title>
           <Desc>{item.desc}</Desc>
